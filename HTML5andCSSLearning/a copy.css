@@ -1,0 +1,24 @@
+@import url(./b.css);
+内联 style 标签
+style 标签
+外部文件 css link
+body {
+    background-color: black;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.topNavBar > nav > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.topNavBar > nav > ul > li {
+    float:left;
+}
+.topNavBar > nav > ul > li > a {
+    font-size: 12px;
+    color: #b7b7b7;
+}
