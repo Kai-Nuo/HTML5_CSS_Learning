@@ -1,5 +1,5 @@
 body {
-    background: black;
+    background: #efefef;
     margin: 0;
 }
 a {
@@ -18,7 +18,26 @@ a {
 }
 .banner {
     height: 515px;
-    border: 1px solid red;
+    background-position: center center;
+    background-size: cover;
+}
+.banner .mask {
+    height: 515px;
+    background-color: rgba(0,0,0,0.5);
+}
+.userCard {
+    border:1px solid red;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+}
+.userCard .welcome {
+    background: #39C5BB;
+    color: white;
+    display: inline-block;
+    padding: 4px 16px;
+    line-height: 22px;
 }
 .topNavBar nav {
     padding-top: 7px;
@@ -29,14 +48,14 @@ a {
     padding-bottom: 4px;
     font-family: "arial black";
 }
-.topNavBar .logo .rs {
+.topNavBar .logo .miku {
     font-size: 24px;
     margin-right: 4px;
-    color: #e6686a;
+    color: #39C5BB;
 }
-.topNavBar .logo .card {
+.topNavBar .logo .miku2 {
     font-size: 24px;
-    color: #9a9Da2;
+    color:rgb(34, 132, 179);
 }
 .clearfix::after{
     content: '';
