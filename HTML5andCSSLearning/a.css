@@ -20,6 +20,7 @@ a {
     height: 515px;
     background-position: center center;
     background-size: cover;
+    background-image: url(./images/bgimg.jpg);
 }
 .banner .mask {
     height: 515px;
@@ -38,7 +39,17 @@ a {
     display: inline-block;
     padding: 4px 16px;
     line-height: 22px;
+    position: relative;
 }
+.userCard .welcome .triangle {
+    display: block;
+    border: 10px solid transparent;
+    border-left-color:#39C5BB;
+    border-top-width:0px;
+    position: absolute;
+    top: 100%;
+    left: 5px;
+  }
 .topNavBar nav {
     padding-top: 7px;
 }
