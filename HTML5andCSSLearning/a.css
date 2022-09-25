@@ -6,6 +6,16 @@ a {
     color: white;
     text-decoration: none; 
 }
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 萝莉体;
+}
+hr {
+    height: 0;
+    border: none;
+    border-top: 1px solid #dedede;
+}
 .topNavBar {
     padding: 20px 0px 20px 0px;
     position: fixed;
@@ -40,6 +50,7 @@ a {
     padding: 4px 16px;
     line-height: 22px;
     position: relative;
+    margin-bottom: 10px;
 }
 .userCard .welcome .triangle {
     display: block;
@@ -57,7 +68,8 @@ a {
     font-size: 24px;
     padding-top: 3px;
     padding-bottom: 4px;
-    font-family: "arial black";
+    font-weight: bold;
+    /* font-family: "arial black"; */
 }
 .topNavBar .logo .miku {
     font-size: 24px;
@@ -96,4 +108,41 @@ a {
 }
 .topNavBar nav > ul > li > a:hover {
     border-bottom: 3px solid #e06567;
+}
+.userCard .picture {
+    float: left;
+}
+.userCard .text {
+    margin-left: 105px;
+    float: left;
+    width: 470px;
+}
+.userCard .text h1{
+    margin-top: 18px;
+}
+.userCard .text h4{
+    margin-top:5px;
+    font-weight:lighter;
+    font-family: 微软雅黑;
+}
+.userCard .PictureAndText {
+    padding: 50px;
+}
+.userCard .text hr {
+    margin:20px 0;
+}
+.userCard dl dt{
+    float:left;
+    width: 30%;
+    font-weight: bold;
+    padding: 5px 0;
+}
+.userCard dl dd{
+    color: #9da0a7;
+    float:left;
+    width: 70%;
+    padding: 5px 0;
+}
+.userCard > footer .media {
+    background: #39C5BB;
 }
