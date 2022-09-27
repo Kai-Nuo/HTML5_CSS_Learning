@@ -9,9 +9,9 @@ a {
 * {
     margin: 0;
     padding: 0;
-    font-family: 萝莉体;
+    font-family: 微软雅黑;
 }
-hr {
+hr { 
     height: 0;
     border: none;
     border-top: 1px solid #dedede;
@@ -41,6 +41,10 @@ hr {
     margin-left: auto;
     margin-right: auto;
     background-color: #fff;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
 }
 .userCard .welcome {
     background: #39C5BB;
@@ -50,6 +54,7 @@ hr {
     line-height: 22px;
     position: relative;
     margin-bottom: 10px;
+    border-radius: 5px;
 }
 .userCard .welcome .triangle {
     display: block;
@@ -106,7 +111,8 @@ hr {
     display: block;
 }
 .topNavBar nav > ul > li > a:hover {
-    border-bottom: 3px solid #e06567;
+    border-bottom: 3px solid #39C5BB;
+    transition: border-bottom 0.4s;
 }
 .userCard .picture {
     float: left;
@@ -145,6 +151,7 @@ hr {
 .userCard .media {
     background: #39C5BB;
     text-align: center;
+    border-radius: 0 0 20px 20px;
 }
 .userCard svg {
     width: 30px;
@@ -162,6 +169,7 @@ hr {
 }
 .userCard > footer.media > a:hover {
     background: rgb(34, 132, 179);
+    transition: background 0.4s;
 }
 body > main{
     margin-top: -340px;
@@ -177,10 +185,18 @@ body > main .downloadPNG {
     background: #efefef;
     border-radius: 5px;
     margin: 32px 0;
+    transition: box-shadow 0.2s;
 }
 body > main .downloadPNG:hover {
     box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.5);
 }
 body > main .downloadPNG-wrapper {
     text-align:center;
+}
+.introduction {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    text-align: center;
 }
