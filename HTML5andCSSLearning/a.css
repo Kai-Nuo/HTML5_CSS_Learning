@@ -11,6 +11,9 @@ a {
     padding: 0;
     font-family: 微软雅黑;
 }
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
 hr { 
     height: 0;
     border: none;
@@ -204,58 +207,125 @@ body > main .downloadPNG-wrapper {
     margin-right: auto;
     border-radius: 20px;
     text-align: center;
+    line-height: 1.8;
+    font-size: 18px;
 }
 section.skills {
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 60px;
 }
 section.skills > h2 {
     text-align: center;
     color: #3d4451;
     font-size: 34px;
     line-height: 1.2;
-    font-weight: 600 ;   
+    font-weight: 600;
+}
+section.skills h3 {
+    color: #3d4451;
+    font-size: 14px;
+    line-height: 1.1;
+    padding-right: 40px;  
 }
 section.skills > ol{
     background: white;
     box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
+    padding: 42px 50px 10px;
+    margin-top: 30px;
 }
 section.skills > ol > li {
+    width: 48%;
     float: left;
-    width: 50%;
+    box-sizing: border-box;
+}
+section.skills > ol > li:nth-child(even){
+    float: right;
 }
 section.skills .progressBar{
-    height: 3px;
-    border: 1px solid #39C5BB;
+    height: 5px;
+    background: #b8d9d8;
+    border-radius: 4px;
+    margin:4px 0 40px;
 }
-section.skills .progressBar > .progress1{
+section.skills .progressBar > .progress{
     background: #39C5BB;
     height: 100%;
     width: 70%;
+    border-radius: 4px;
 }
-section.skills .progressBar > .progress2{
-    background: #39C5BB;
-    height: 100%;
-    width: 70%;
+section.skills,
+section.portfolio{
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
 }
-section.skills .progressBar > .progress3{
-    background: #39C5BB;
-    height: 100%;
-    width: 70%;
+section.skills > h2 ,
+section.portfolio > h2 {
+    text-align: center;
+    color: #3d4451;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 600;
 }
-section.skills .progressBar > .progress4{
-    background: #39C5BB;
-    height: 100%;
-    width: 70%;
+section.skills h3 {
+    font-size: 14px;
+    line-height: 1.1;
+
 }
-section.skills .progressBar > .progress5{
-    background: #39C5BB;
-    height: 100%;
-    width: 70%;
+section.portfolio{
+    text-align: center;
+    margin-bottom: 100px;
 }
-section.skills .progressBar > .progress6{
-    background: #39C5BB;
+section.portfolio >nav >ol{
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: top;
+}
+section.portfolio >nav >ol >li{
+    float: left;
+    margin-left: 40px;
+    cursor: pointer;
+}
+section.portfolio >nav >ol >li:nth-child(1){
+    margin-left: 0px;
+}
+section.portfolio >nav .bar {
+    height: 5px;
+    background: white;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+section.portfolio >nav {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 32px;
+}
+section.portfolio >nav .bar-inner{
     height: 100%;
-    width: 70%;
+    background: #39C5BB;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+section.portfolio >nav .bar.state-1 .bar-inner {
+    margin-left: 0;
+    width:32px;
+}
+section.portfolio >nav .bar.state-2 .bar-inner {
+    margin-left: 70px;
+    width:32px;
+}
+section.portfolio >nav .bar.state-3 .bar-inner {
+    margin-left: 140px;
+    width:32px;
+}
+section.portfolio .works {
+    position: relative;
+}
+section.portfolio .works > .big,
+section.portfolio .works > .small {
+    position: absolute;
 }
