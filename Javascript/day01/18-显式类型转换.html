@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(Number(`10`))
+        console.log(parseInt(`10`))
+        // 转换为数字型，删除小数
+        console.log(parseInt(`10.111`)) //10
+        console.log(parseInt(`10.999px`)) //10
+        // 转换为数字型，保留小数
+        console.log(parseFloat(`10.999`)) //10.999
+
+        // 区别
+        // Number() 只能放数字 不能放abc
+        // 否则返回NaN not A number
+        console.log(Number('10.01abc')) //NaN
+        console.log(parseFloat('10.01abc')) //10.01
+        console.log(parseFloat('100px')) //100
+    </script>
+</body>
+</html>

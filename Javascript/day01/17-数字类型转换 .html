@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = prompt('请输入一个数字')
+        console.log(num, typeof num)
+        // 内部悄悄的把20转换为了字符串的'20'
+        console.log('我我我' + 20)
+        console.log(10 + '10') // 1010
+        console.log(10 + +'10') // 20
+        // - * / 把字符串'10'转换为数字型10
+        console.log(10 - '10') // 0
+        // 小技巧
+        let num1 = '10'
+        console.log(num1)
+        console.log(+num1)
+        // console.log(-num)
+    </script>
+</body>
+</html>
