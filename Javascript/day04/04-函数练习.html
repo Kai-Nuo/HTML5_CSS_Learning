@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <script>
+        // function  getSum() {
+        //     let num1 = 10
+        //     let num2 = 20
+        //     document.write(num1 + num2)
+        // }
+        // getSum()
+
+        let max
+        function getSum100(max) {
+            let sum = 0
+            max = prompt('请输入最大数')
+            max = max || 0
+            for(let i = 1 ;i <= max; i++) {
+                sum += i
+            }
+            document.write(sum)
+            document.write(`<br>`)
+        }
+        getSum100() 
+        getSum100() 
+        getSum100() 
+        // function getSum(num1, num2) {
+        //     document.write(num1 + num2)
+        // }
+        // getSum(1, 2)
+        // getSum(114514, 1919810)
+       </script>
+</body>
+</html>

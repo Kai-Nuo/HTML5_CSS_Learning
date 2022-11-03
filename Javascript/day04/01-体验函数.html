@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: inline-block;
+            height: 25px;
+            line-height: 25px;
+            margin: 5px;
+            background-color: seashell;
+            padding: 0 10px;
+            border: 1px solid skyblue;
+            color: aqua;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function fn() {
+            for (let i = 1; i <= 9; i++) {
+            for (let j = 1; j <= i; j++) {
+                let k = i * j
+                document.write(`
+                
+                <div>${i} x ${j} = ${k} </div>           
+                  
+                `)
+            }
+            document.write('<br>')
+        }
+        }
+        fn()
+        fn()
+    </script>
+</body>
+</html>
