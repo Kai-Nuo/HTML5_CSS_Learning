@@ -1,0 +1,5 @@
+@import url(./style.css);
+
+/* 两种写法都可 但是url更规范 */
+
+@import "./test.css"; 
