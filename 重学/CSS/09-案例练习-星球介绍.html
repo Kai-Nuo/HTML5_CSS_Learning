@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .item {
+      width: 500px;
+      background-color: skyblue;
+      
+      /* 方式一 改变元素的特性和垂直方向的布局 */
+      /* display: inline-block;
+      vertical-align: top; */
+
+      /* 方式二:通过浮动完成 */
+      /* float: left; */
+
+    }
+
+    .album {
+      width: 500px;
+    }
+
+    .keyword {
+      font-size: 30px;
+      background-color: orange;
+      color: white;
+      }
+  </style>
+</head>
+<body>
+  <h1>星球介绍</h1>
+  <div class="item">
+    <h2>木星</h2>
+    <img class="album" src="./img/jupiter.jpg" alt="木星">
+    <p>
+      <span class="keyword">木星(Jupiter)</span>是距离太阳第五近的行星，也是太阳系中体积最大的行星，目前已知有95颗卫星。天文学家很早就发现了这颗行星 ，罗马人以他们的神称这颗行星为朱庇特[12]。古代中国则称木星为岁星、太岁，取其绕行天球一周约为12年，与地支相同之故，且产生了岁星纪年法。到西汉时期，《史记‧天官书》作者天文学家司马迁从实际观测发现岁星呈青色，与“五行”学说联系在一起，正式把它命名为木星。
+    </p>
+  </div>
+
+  <div class="item">
+    <h2>地球</h2>
+    <img class="album" src="./img/Earth.jpg" alt="蓝色弹珠">
+    <p>
+      <span class="keyword">地球(Earth)</span>是太阳系中由内及外的第三颗行星，距离太阳149 597 870.7千米/1天文单位，是宇宙中人类已知唯一存在生命的天体，也是人类居住的星球，共有80亿人口。其质量约为5.97×1024千克，半径约6,371千米，平均密度5.5 g/cm3，是太阳系行星中最高的。地球同时进行自转和公转运动，分别产生了昼夜及四季的变化更替，一太阳日自转一周，一太阳年公转一周。自转轨道面称为赤道面，公转轨道面称为黄道面，两者之间的夹角称为黄赤交角。地球仅有一颗自然卫星，即月球。
+    </p>
+  </div>
+</body>
+</html>
